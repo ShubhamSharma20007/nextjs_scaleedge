@@ -1,0 +1,54 @@
+.useable-container{
+    position: relative;
+}
+
+.kite{
+    position: absolute;
+     left: 6%;
+     top: 40%;
+     opacity: 0.7;
+     animation: kitezoom 2s linear  infinite
+
+}
+.useable-first{
+    display: flex;
+    flex-direction: column ;
+    justify-content: start ;
+}
+
+.list-useable{
+    list-style:inside;
+    font-size: 15px;
+    font-weight: 600;
+
+    
+}
+
+.para-para::first-letter{
+    font-weight: 800;
+    font-size: 22px;
+}
+.list-useable li{
+    font-family: system-ui;
+    line-height: 25px;
+}
+
+@media screen and (max-width:1150px) {
+  .mut-heading{
+    font-size: 35px;
+  }
+  .mobileImage{
+    width: 80% !important;
+  }
+ }
+
+@keyframes kitezoom {
+    0%, 100%{
+        transform: scale(0.8);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+    
+}
